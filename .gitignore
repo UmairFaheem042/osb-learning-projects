@@ -1,0 +1,28 @@
+# JDeveloper
+.data/
+classes/
+deploy/
+*.jpr.bak
+*.jws.bak
+
+# SOA Compiled
+.adf/
+.sar/
+sca_*.jar
+
+# Build artifacts
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iml

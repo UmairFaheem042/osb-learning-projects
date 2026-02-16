@@ -1,4 +1,4 @@
-# SOA/OSB Learning Journey 🚀
+# Oracle Service Bus (OSB) Project Based Learning
 
 ![Projects Completed](https://img.shields.io/badge/Projects-1%2F25-blue)
 ![OSB Focus](https://img.shields.io/badge/Focus-OSB%20Development-green)
@@ -9,7 +9,25 @@
 
 ## 🎯 Overview
 
-Welcome to my comprehensive learning journey through **Oracle Service Bus (OSB)** and **Oracle SOA Suite**! This repository documents my hands-on experience building 25 progressive integration projects, with a unique twist: **each project is implemented in BOTH OSB and SOA Suite** to deeply understand when and why to use each technology.
+This repository contains hands-on implementation of **25 progressive integration projects in OSB**.
+
+While the code in this repository is OSB-focused, each project is also designed
+from a **SOA Suite perspective** to understand:
+
+- When to use OSB vs SOA
+- Mediation vs Orchestration
+- Pipeline vs BPEL
+- Routing vs Process Flow
+- Stateless vs Long-running processes
+
+For every project, I analyze:
+
+- ✅ OSB implementation (code available in this repo)
+- 🧠 Equivalent SOA approach (conceptual comparison & architecture notes)
+- 📊 Trade-offs and decision-making considerations
+
+The goal is not just to learn tools — but to develop strong
+**integration architecture thinking** using Oracle’s middleware stack.
 
 ---
 
@@ -143,36 +161,12 @@ Modern integration patterns and multi-technology.
 
 ### Languages & Standards
 
-- **BPEL 2.0** - Business Process Execution Language
-- **XSLT 1.0/2.0** - XML transformations
+- **BPEL** - Business Process Execution Language
+- **XSLT** - XML transformations
 - **XQuery** - XML query language
-- **XPath 1.0/2.0** - XML navigation
-- **WSDL 1.1** - Service descriptions
-- **XML Schema (XSD)** - Data structure definitions
-
----
-
-## 🤝 How to Use This Repository
-
-### For Learners
-
-**If you're learning OSB/SOA:**
-
-1. Start with Level 1, Project 01
-2. Follow the README.md in each project folder
-3. Try building it yourself before looking at the code
-4. Compare your approach with the documented solution
-5. Read the comparison.md to understand trade-offs
-
-### For Employers/Recruiters
-
-This repository demonstrates:
-
-- ✅ Hands-on OSB and SOA Suite experience
-- ✅ Systematic learning approach
-- ✅ Strong documentation skills
-- ✅ Architectural thinking (dual implementations show decision-making)
-- ✅ Real-world problem-solving
+- **XPath** - XML navigation
+- **WSDL** - Service descriptions
+- **XSD** - Data structure definitions
 
 ---
 
@@ -191,12 +185,11 @@ This project is licensed under the **MIT License**
 
 ---
 
-## 🔄 Recent Update
+## 🔄 Recent Updates
 
-### February 15, 2026
+- February 16, 2026 - Updated main `README.md`
 
-- ✅ Completed Project 01 (Hello User) OSB implementation
-- 📝 Created comprehensive project documentation
+- February 15, 2026 - Completed `Hello User` Project
 
 ---
 
@@ -204,9 +197,10 @@ This project is licensed under the **MIT License**
 
 ### 🚀 Let's learn integration architecture together!
 
-![Oracle](https://img.shields.io/badge/Oracle-SOA%20Suite-red?logo=oracle)
-![Service Bus](https://img.shields.io/badge/Oracle-Service%20Bus-blue?logo=oracle)
-![In Progress](https://img.shields.io/badge/Status-Learning%20Journey-green)
+![Oracle](https://img.shields.io/badge/Oracle-Middleware-red?logo=oracle&logoColor=white)
+![Primary Focus](https://img.shields.io/badge/Primary-OSB%2014c-blue)
+![Parallel Learning](https://img.shields.io/badge/Also%20Exploring-SOA%20Suite-orange)
+![Status](https://img.shields.io/badge/Status-Learning-green)
 
 **Built with ❤️ and lots of ☕ by Umair Faheem**
 

@@ -195,17 +195,17 @@ SBHelloUser/
 
 ### 1. Pipeline Design
 
-![Pipeline with Replace Action](screenshots/Pipeline.png)
+![Pipeline with Replace Action](Screenshots/Pipeline.png)
 _Pipeline Pair with Replace action configured_
 
 ### 2. Replace Action Configuration
 
-![Replace Configuration](screenshots/ReplaceNodeConfig.png)
+![Replace Configuration](Screenshots/ReplaceNodeConfig.png)
 _Replace action settings: Location=body, XPath=., Value=concat expression_
 
 ### 3. Service Bus Console - Test Interface
 
-![Test Console](screenshots/test-console.png)
+![Test Console](Screenshots/test-console.png)
 _Service Bus Console showing test request and response_
 
 ---

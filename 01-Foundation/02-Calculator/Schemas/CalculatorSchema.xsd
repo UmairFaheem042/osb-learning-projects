@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://practice.learning.com/osb/calculator/schema"
+            targetNamespace="http://practice.learning.com/osb/calculator/schema" elementFormDefault="qualified">
+  <xsd:element name="AddRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Num1" type="xsd:integer"/>
+        <xsd:element name="Num2" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="AddResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Result" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="SubtractRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Num1" type="xsd:integer"/>
+        <xsd:element name="Num2" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="SubtractResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Result" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="MultiplyRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Num1" type="xsd:integer"/>
+        <xsd:element name="Num2" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="MultiplyResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Result" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="DivideRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Num1" type="xsd:integer"/>
+        <xsd:element name="Num2" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="DivideResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Result" type="xsd:integer"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:element name="CalculatorFault">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="errorCode" type="xsd:string"/>
+        <xsd:element name="errorMessage" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

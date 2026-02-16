@@ -54,10 +54,10 @@ Master OSB and SOA basics through simple projects.
 | #   | Project                                                          | OSB Status  | Topics Covered                                   |
 | --- | ---------------------------------------------------------------- | ----------- | ------------------------------------------------ |
 | 01  | [Hello User](01-Foundation/01-HelloUser/)                        | ✅ Complete | Proxy Services, Pipelines, Replace Action, XPath |
-| 02  | [Calculator Service](01-Foundation/02-calculator/)               | ⏳ Pending  | Conditional Logic, XPath Math, Error Messages    |
-| 03  | [Temperature Converter](01-Foundation/03-temperature-converter/) | ⏳ Pending  | Multiple Transformations, XPath Functions        |
-| 04  | [String Manipulation](01-Foundation/04-string-manipulation/)     | ⏳ Pending  | String Functions, Switch-Case Patterns           |
-| 05  | [Date Time Service](01-Foundation/05-date-time-service/)         | ⏳ Pending  | Date Functions, Format Conversions               |
+| 02  | [Calculator Service](01-Foundation/02-Calculator/)               | ✅ Complete | Conditional Logic, XPath Math, Error Messages    |
+| 03  | [Temperature Converter](01-Foundation/03-Temperature-Converter/) | ⏳ Pending  | Multiple Transformations, XPath Functions        |
+| 04  | [String Manipulation](01-Foundation/04-String-Manipulation/)     | ⏳ Pending  | String Functions, Switch-Case Patterns           |
+| 05  | [Date Time Service](01-Foundation/05-Date-Time-Service/)         | ⏳ Pending  | Date Functions, Format Conversions               |
 
 **Learning Objectives:**
 
@@ -182,14 +182,6 @@ While this is primarily a personal learning journey, I welcome:
 ## 📝 License
 
 This project is licensed under the **MIT License**
-
----
-
-## 🔄 Recent Updates
-
-- February 16, 2026 - Updated main `README.md`
-
-- February 15, 2026 - Completed `Hello User` Project
 
 ---
 

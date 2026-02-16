@@ -1,6 +1,6 @@
 # Oracle Service Bus (OSB) Project Based Learning
 
-![Projects Completed](https://img.shields.io/badge/Projects-1%2F25-blue)
+![Projects Completed](https://img.shields.io/badge/Projects-2%2F25-blue)
 ![OSB Focus](https://img.shields.io/badge/Focus-OSB%20Development-green)
 ![Last Updated](https://img.shields.io/badge/Updated-February%202026-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
@@ -33,11 +33,11 @@ The goal is not just to learn tools — but to develop strong
 
 ## 📊 Progress Tracker
 
-### Overall Progress: 1/25
+### Overall Progress: 2/25
 
 | Level                     | Projects | Status         | Count |
 | ------------------------- | -------- | -------------- | ----- |
-| **Level 1: Foundation**   | 5        | 🔄 In Progress | 1/5   |
+| **Level 1: Foundation**   | 5        | 🔄 In Progress | 2/5   |
 | **Level 2: Intermediate** | 5        | ⏳ Not Started | 0/5   |
 | **Level 3: Advanced**     | 5        | ⏳ Not Started | 0/5   |
 | **Level 4: Enterprise**   | 5        | ⏳ Not Started | 0/5   |

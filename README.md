@@ -1,6 +1,6 @@
 # Oracle Service Bus (OSB) Project Based Learning
 
-![Projects Completed](https://img.shields.io/badge/Projects-2%2F25-blue)
+![Projects Completed](https://img.shields.io/badge/Projects-3%2F25-blue)
 ![OSB Focus](https://img.shields.io/badge/Focus-OSB%20Development-green)
 ![Last Updated](https://img.shields.io/badge/Updated-February%202026-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
@@ -37,7 +37,7 @@ The goal is not just to learn tools — but to develop strong
 
 | Level                     | Projects | Status         | Count |
 | ------------------------- | -------- | -------------- | ----- |
-| **Level 1: Foundation**   | 5        | 🔄 In Progress | 2/5   |
+| **Level 1: Foundation**   | 5        | 🔄 In Progress | 3/5   |
 | **Level 2: Intermediate** | 5        | ⏳ Not Started | 0/5   |
 | **Level 3: Advanced**     | 5        | ⏳ Not Started | 0/5   |
 | **Level 4: Enterprise**   | 5        | ⏳ Not Started | 0/5   |
@@ -55,7 +55,7 @@ Master OSB and SOA basics through simple projects.
 | --- | ---------------------------------------------------------------- | ----------- | ------------------------------------------------ |
 | 01  | [Hello User](01-Foundation/01-HelloUser/)                        | ✅ Complete | Proxy Services, Pipelines, Replace Action, XPath |
 | 02  | [Calculator Service](01-Foundation/02-Calculator/)               | ✅ Complete | Conditional Logic, XPath Math, Error Messages    |
-| 03  | [Temperature Converter](01-Foundation/03-Temperature-Converter/) | ⏳ Pending  | Multiple Transformations, XPath Functions        |
+| 03  | [Temperature Converter](01-Foundation/03-Temperature-Converter/) | ✅ Complete | Multiple Transformations, XPath Functions        |
 | 04  | [String Manipulation](01-Foundation/04-String-Manipulation/)     | ⏳ Pending  | String Functions, Switch-Case Patterns           |
 | 05  | [Date Time Service](01-Foundation/05-Date-Time-Service/)         | ⏳ Pending  | Date Functions, Format Conversions               |
 

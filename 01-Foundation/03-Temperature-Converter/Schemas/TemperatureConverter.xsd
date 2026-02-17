@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://practice.learning.com/osb/temperatureconverter/schema"
+            xmlns:tns="http://practice.learning.com/osb/temperatureconverter/schema" elementFormDefault="qualified">
+  
+  <!-- REQUEST — Celsius to Fahrenheit  -->
+  <xsd:element name="CelsiusToFahrenheitRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="CelsiusTemperature" type="xsd:decimal"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <!-- REQUEST — Fahrenheit to Celsius -->
+  <xsd:element name="FahrenheitToCelsiusRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="FahrenheitTemperature" type="xsd:decimal"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TemperatureResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="InputTemperature" type="xsd:decimal"/>
+        <xsd:element name="OutputTemperature" type="xsd:decimal"/>
+        <xsd:element name="InputUnit" type="xsd:string"/>
+        <xsd:element name="OutputUnit" type="xsd:string"/>
+        <xsd:element name="ConversionSummary" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="TemperatureFault">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ErrorCode" type="xsd:string"/>
+        <xsd:element name="ErrorMessage" type="xsd:string"/>
+        <xsd:element name="FaultyValue" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

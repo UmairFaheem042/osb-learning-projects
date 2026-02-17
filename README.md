@@ -33,7 +33,7 @@ The goal is not just to learn tools — but to develop strong
 
 ## 📊 Progress Tracker
 
-### Overall Progress: 2/25
+### Overall Progress: 3/25
 
 | Level                     | Projects | Status         | Count |
 | ------------------------- | -------- | -------------- | ----- |

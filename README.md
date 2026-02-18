@@ -1,6 +1,6 @@
 # Oracle Service Bus (OSB) Project Based Learning
 
-![Projects Completed](https://img.shields.io/badge/Projects-3%2F25-blue)
+![Projects Completed](https://img.shields.io/badge/Projects-4%2F25-blue)
 ![OSB Focus](https://img.shields.io/badge/Focus-OSB%20Development-green)
 ![Last Updated](https://img.shields.io/badge/Updated-February%202026-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
@@ -33,11 +33,11 @@ The goal is not just to learn tools — but to develop strong
 
 ## 📊 Progress Tracker
 
-### Overall Progress: 3/25
+### Overall Progress: 4/25
 
 | Level                     | Projects | Status         | Count |
 | ------------------------- | -------- | -------------- | ----- |
-| **Level 1: Foundation**   | 5        | 🔄 In Progress | 3/5   |
+| **Level 1: Foundation**   | 5        | 🔄 In Progress | 4/5   |
 | **Level 2: Intermediate** | 5        | ⏳ Not Started | 0/5   |
 | **Level 3: Advanced**     | 5        | ⏳ Not Started | 0/5   |
 | **Level 4: Enterprise**   | 5        | ⏳ Not Started | 0/5   |
@@ -56,7 +56,7 @@ Master OSB and SOA basics through simple projects.
 | 01  | [Hello User](01-Foundation/01-HelloUser/)                        | ✅ Complete | Proxy Services, Pipelines, Replace Action, XPath |
 | 02  | [Calculator Service](01-Foundation/02-Calculator/)               | ✅ Complete | Conditional Logic, XPath Math, Error Messages    |
 | 03  | [Temperature Converter](01-Foundation/03-Temperature-Converter/) | ✅ Complete | Multiple Transformations, XPath Functions        |
-| 04  | [String Manipulation](01-Foundation/04-String-Manipulation/)     | ⏳ Pending  | String Functions, Switch-Case Patterns           |
+| 04  | [String Manipulation](01-Foundation/04-String-Manipulation/)     | ✅ Complete  | String Functions, Switch-Case Patterns           |
 | 05  | [Date Time Service](01-Foundation/05-Date-Time-Service/)         | ⏳ Pending  | Date Functions, Format Conversions               |
 
 **Learning Objectives:**
@@ -167,6 +167,34 @@ Modern integration patterns and multi-technology.
 - **XPath** - XML navigation
 - **WSDL** - Service descriptions
 - **XSD** - Data structure definitions
+
+---
+
+## Which one to choose, OSB or SOA?
+
+```
+START
+  │
+  ├─ Does it take longer than 1 minute? ────────────────── YES ──▶ SOA
+  │
+  NO
+  │
+  ├─ Does a human need to approve/review something? ──────── YES ──▶ SOA
+  │
+  NO
+  │
+  ├─ Do you need to wait for another system (hours/days)? ── YES ──▶ SOA
+  │
+  NO
+  │
+  ├─ Do you need to remember what happened yesterday? ────── YES ──▶ SOA
+  │
+  NO
+  │
+  ├─ Is it just transformation/routing/validation? ───────── YES ──▶ OSB
+  │
+  └─ Is it processing 1000s of messages per minute? ──────── YES ──▶ OSB
+```
 
 ---
 

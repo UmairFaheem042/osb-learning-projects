@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://practice.learning.com/osb/stringmanipulation/schema"
+            targetNamespace="http://practice.learning.com/osb/stringmanipulation/schema" 
+            elementFormDefault="qualified">
+  <xsd:element name="StringRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="inputString"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="StringResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="upperCase" type="xsd:string"/>
+        <xsd:element name="lowerCase" type="xsd:string"/>
+        <xsd:element name="stringLength" type="xsd:integer"/>
+        <xsd:element name="trimmed" type="xsd:string"/>
+        <xsd:element name="concatenated" type="xsd:string"/>
+        <xsd:element name="category" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

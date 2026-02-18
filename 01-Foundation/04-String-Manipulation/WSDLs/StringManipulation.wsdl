@@ -1,0 +1,51 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<wsdl:definitions
+     name="StringManipulation"
+     targetNamespace="http://practice.learning.com/osb/stringmanipulation/wsdl"
+     xmlns:tns="http://practice.learning.com/osb/stringmanipulation/wsdl"
+     xmlns:inp1="http://practice.learning.com/osb/stringmanipulation/schema"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+     
+    <wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://practice.learning.com/osb/stringmanipulation/schema" schemaLocation="../Schemas/StringManipulation.xsd"/>
+        </xsd:schema>
+    </wsdl:types>
+    
+    <wsdl:message name="StringRequestMsg">
+        <wsdl:part name="parameters" element="inp1:StringRequest"/>
+    </wsdl:message>
+    <wsdl:message name="StringResponseMsg">
+        <wsdl:part name="parameters" element="inp1:StringResponse"/>
+    </wsdl:message>
+    
+    <wsdl:portType name="StringManipulationPortType">
+        <wsdl:operation name="processString">
+            <wsdl:input message="tns:StringRequestMsg"/>
+            <wsdl:output message="tns:StringResponseMsg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    
+    <wsdl:binding name="StringManipulationBinding" type="tns:StringManipulationPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="processString">
+            <soap:operation soapAction="processString"/>
+            <wsdl:input>
+                <soap:body use="literal" namespace="http://practice.learning.com/osb/stringmanipulation/wsdl"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" namespace="http://practice.learning.com/osb/stringmanipulation/wsdl"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    
+    <wsdl:service name="StringManipulationService">
+        <wsdl:port name="StringManipulationPort"
+              binding="tns:StringManipulationBinding">
+            <soap:address
+                location="http://localhost:7101/StringManipulation"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

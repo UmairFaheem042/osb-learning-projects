@@ -56,8 +56,8 @@ Master OSB and SOA basics through simple projects.
 | 01  | [Hello User](01-Foundation/01-HelloUser/)                        | ✅ Complete | Proxy Services, Pipelines, Replace Action, XPath |
 | 02  | [Calculator Service](01-Foundation/02-Calculator/)               | ✅ Complete | Conditional Logic, XPath Math, Error Messages    |
 | 03  | [Temperature Converter](01-Foundation/03-Temperature-Converter/) | ✅ Complete | Multiple Transformations, XPath Functions        |
-| 04  | [String Manipulation](01-Foundation/04-String-Manipulation/)     | ✅ Complete  | String Functions, Switch-Case Patterns           |
-| 05  | [Date Time Service](01-Foundation/05-Date-Time-Service/)         | ⏳ Pending  | Date Functions, Format Conversions               |
+| 04  | [String Manipulation](01-Foundation/04-String-Manipulation/)     | ✅ Complete | String Functions, Switch-Case Patterns           |
+| 05  | [Date Time Service](01-Foundation/05-Date-Time-Service/)         | 🔄 In Progress  | Date Functions, Format Conversions               |
 
 **Learning Objectives:**
 

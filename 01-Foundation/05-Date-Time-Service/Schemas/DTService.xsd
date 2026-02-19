@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://practice.learning.com/osb/DTService/schema"
+  xmlns:tns="http://practice.learning.com/osb/DTService/schema"
+  targetNamespace="http://practice.learning.com/osb/DTService/schema"
+  elementFormDefault="qualified">
+
+
+  <xsd:simpleType name="DateFormatType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="YYYY-MM-DD" />
+      <xsd:enumeration value="DD/MM/YYYY" />
+      <xsd:enumeration value="MM-DD-YYYY" />
+      <xsd:enumeration value="DD-MMM-YYYY" />
+      <xsd:enumeration value="YYYY/MM/DD" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="StatusType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="SUCCESS" />
+      <xsd:enumeration value="FAILURE" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:element name="DateTimeRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="inputDate" type="xsd:string" minOccurs="0" />
+        <xsd:element name="inputFormat" type="tns:DateFormatType" minOccurs="0" />
+        <xsd:element name="outputFormat" type="tns:DateFormatType" minOccurs="0" />
+        <xsd:element name="daysToAdd" type="xsd:integer" minOccurs="0" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="DateTimeResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="status" type="tns:StatusType" />
+        <xsd:element name="inputDate" type="xsd:string" minOccurs="0" />
+        <xsd:element name="outputDate" type="xsd:string" minOccurs="0" />
+        <xsd:element name="timestamp" type="xsd:string" minOccurs="0" />
+        <xsd:element name="message" type="xsd:string" minOccurs="0" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="DateTimeFault">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="errorCode" type="xsd:string" />
+        <xsd:element name="errorMessage" type="xsd:string" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

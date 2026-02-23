@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://practice.learning.com/osb/serviceorchestration/schema/order"
+            targetNamespace="http://practice.learning.com/osb/serviceorchestration/schema/order"
+            elementFormDefault="qualified">
+  <xsd:element name="OrderResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="orderId"    type="xsd:string"/>
+                <xsd:element name="customerId" type="xsd:string"/>
+                <xsd:element name="product"    type="xsd:string"/>
+                <xsd:element name="amount"     type="xsd:decimal"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

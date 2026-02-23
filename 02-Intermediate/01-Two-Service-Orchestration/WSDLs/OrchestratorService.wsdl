@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://practice.learning.com/osb/serviceorchestration/wsdl/orchestrated"
+             xmlns:cust="http://practice.learning.com/osb/serviceorchestration/schema/customer"
+             xmlns:orch="http://practice.learning.com/osb/serviceorchestration/schema/orchestrated"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             targetNamespace="http://practice.learning.com/osb/serviceorchestration/wsdl/orchestrated"
+             name="OrchestratorService">
+
+    <types>
+        <xsd:schema>
+            <!-- Input reuses CustomerRequest (caller sends a customerId) -->
+            <xsd:import namespace="http://practice.learning.com/osb/serviceorchestration/schema/customer"
+                        schemaLocation="../Schemas/CustomerRequest.xsd"/>
+            <!-- Output is the combined orchestrated response -->
+            <xsd:import namespace="http://practice.learning.com/osb/serviceorchestration/schema/orchestrated"
+                        schemaLocation="../Schemas/OrchestratedResponse.xsd"/>
+        </xsd:schema>
+    </types>
+
+    <message name="OrchestratorRequestMsg">
+        <part name="parameters" element="cust:CustomerRequest"/>
+    </message>
+    <message name="OrchestratorResponseMsg">
+        <part name="parameters" element="orch:OrchestratedResponse"/>
+    </message>
+
+    <portType name="OrchestratorPortType">
+        <operation name="orchestrate">
+            <input  message="tns:OrchestratorRequestMsg"/>
+            <output message="tns:OrchestratorResponseMsg"/>
+        </operation>
+    </portType>
+
+    <binding name="OrchestratorBinding" type="tns:OrchestratorPortType">
+        <soap:binding style="document"
+                      transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="orchestrate">
+            <soap:operation soapAction="orchestrate"/>
+            <input>  <soap:body use="literal"/> </input>
+            <output> <soap:body use="literal"/> </output>
+        </operation>
+    </binding>
+
+    <service name="OrchestratorService">
+        <port name="OrchestratorPort" binding="tns:OrchestratorBinding">
+            <soap:address location="http://localhost:8010/orchestrator"/>
+        </port>
+    </service>
+
+</definitions>

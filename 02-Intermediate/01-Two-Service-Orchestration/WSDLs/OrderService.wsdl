@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://practice.learning.com/osb/serviceorchestration/wsdl/orderservice"
+             xmlns:ord="http://practice.learning.com/osb/serviceorchestration/schema/order"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             targetNamespace="http://practice.learning.com/osb/serviceorchestration/wsdl/orderservice"
+             name="OrderService">
+
+    <types>
+        <xsd:schema>
+            <xsd:import namespace="http://practice.learning.com/osb/serviceorchestration/schema/order"
+                        schemaLocation="../Schemas/OrderRequest.xsd"/>
+            <xsd:import namespace="http://practice.learning.com/osb/serviceorchestration/schema/order"
+                        schemaLocation="../Schemas/OrderResponse.xsd"/>
+        </xsd:schema>
+    </types>
+
+    <message name="OrderRequestMsg">
+        <part name="parameters" element="ord:OrderRequest"/>
+    </message>
+    <message name="OrderResponseMsg">
+        <part name="parameters" element="ord:OrderResponse"/>
+    </message>
+
+    <portType name="OrderPortType">
+        <operation name="getOrder">
+            <input  message="tns:OrderRequestMsg"/>
+            <output message="tns:OrderResponseMsg"/>
+        </operation>
+    </portType>
+
+    <binding name="OrderBinding" type="tns:OrderPortType">
+        <soap:binding style="document"
+                      transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getOrder">
+            <soap:operation soapAction="getOrder"/>
+            <input>  <soap:body use="literal"/> </input>
+            <output> <soap:body use="literal"/> </output>
+        </operation>
+    </binding>
+
+    <service name="OrderService">
+        <port name="OrderPort" binding="tns:OrderBinding">
+            <soap:address location="http://localhost:8012/order"/>
+        </port>
+    </service>
+
+</definitions>

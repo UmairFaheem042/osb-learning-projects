@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://practice.learning.com/osb/serviceorchestration/schema/customer"
+            targetNamespace="http://practice.learning.com/osb/serviceorchestration/schema/customer"
+            elementFormDefault="qualified">
+  <xsd:element name="CustomerResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="customerId"   type="xsd:string"/>
+                <xsd:element name="customerName" type="xsd:string"/>
+                <xsd:element name="email"        type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

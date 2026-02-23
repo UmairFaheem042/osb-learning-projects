@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://practice.learning.com/osb/serviceorchestration/schema/customer"
+            xmlns:tns="http://practice.learning.com/osb/serviceorchestration/schema/customer"
+            elementFormDefault="qualified">
+  <xsd:element name="CustomerRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="customerId" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

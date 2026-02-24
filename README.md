@@ -38,7 +38,7 @@ The goal is not just to learn tools — but to develop strong
 | Level                     | Projects | Status         | Count |
 | ------------------------- | -------- | -------------- | ----- |
 | **Level 1: Foundation**   | 5        | ✅ Completed   | 5/5   |
-| **Level 2: Intermediate** | 5        | ⏳ Not Started | 0/5   |
+| **Level 2: Intermediate** | 5        | 🔁 Started | 0/5   |
 | **Level 3: Advanced**     | 5        | ⏳ Not Started | 0/5   |
 | **Level 4: Enterprise**   | 5        | ⏳ Not Started | 0/5   |
 | **Level 5: Expert**       | 5        | ⏳ Not Started | 0/5   |
@@ -72,7 +72,7 @@ Service integration and orchestration patterns.
 
 | #   | Project                                                        | OSB Status | Topics Covered                              |
 | --- | -------------------------------------------------------------- | ---------- | ------------------------------------------- |
-| 06  | [Two-Service Orchestration](02-Intermediate/06-orchestration/) | ⏳ Pending | Service Callout vs Invoke, Sequential Calls |
+| 06  | [Two-Service Orchestration](02-Intermediate/06-orchestration/) | 🔁 In Progress | Service Callout vs Invoke, Sequential Calls |
 | 07  | [Parallel Invocation](02-Intermediate/07-parallel/)            | ⏳ Pending | Split-Join vs Flow, Aggregation             |
 | 08  | [Content-Based Routing](02-Intermediate/08-routing/)           | ⏳ Pending | Route Node vs If/Else, Dynamic Routing      |
 | 09  | [Data Transformation](02-Intermediate/09-transformation/)      | ⏳ Pending | XSLT vs Assign, Complex Mapping             |

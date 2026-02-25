@@ -72,8 +72,8 @@ Service integration and orchestration patterns.
 
 | #   | Project                                                        | OSB Status | Topics Covered                              |
 | --- | -------------------------------------------------------------- | ---------- | ------------------------------------------- |
-| 06  | [Two-Service Orchestration](02-Intermediate/06-orchestration/) | 🔁 In Progress | Service Callout vs Invoke, Sequential Calls |
-| 07  | [Parallel Invocation](02-Intermediate/07-parallel/)            | ⏳ Pending | Split-Join vs Flow, Aggregation             |
+| 06  | [Two-Service Orchestration](02-Intermediate/01-Two-Service-Orchestration/) | 🔁 In Progress | Service Callout vs Invoke, Sequential Calls |
+| 07  | [Parallel Invocation](02-Intermediate/02-Parallel-Invocation/)            | 🔁 In Progress | Split-Join vs Flow, Aggregation             |
 | 08  | [Content-Based Routing](02-Intermediate/08-routing/)           | ⏳ Pending | Route Node vs If/Else, Dynamic Routing      |
 | 09  | [Data Transformation](02-Intermediate/09-transformation/)      | ⏳ Pending | XSLT vs Assign, Complex Mapping             |
 | 10  | [Error Handling](02-Intermediate/10-error-handling/)           | ⏳ Pending | Error Pipelines vs Fault Handlers           |
@@ -215,7 +215,7 @@ This project is licensed under the **MIT License**
 
 <div align="center">
 
-### 🚀 Let's learn integration architecture together!
+### 🚀 Let's learn integration architecture together
 
 ![Oracle](https://img.shields.io/badge/Oracle-Middleware-red?logo=oracle&logoColor=white)
 ![Primary Focus](https://img.shields.io/badge/Primary-OSB%2014c-blue)

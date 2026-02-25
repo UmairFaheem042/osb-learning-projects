@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://practice.learning.com/osb/parallelInvocation/wsdl/customerProfile"
+    xmlns:cust="http://practice.learning.com/osb/parallelInvocation/schema/customer"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://practice.learning.com/osb/parallelInvocation/wsdl/customerProfile"
+    name="CustomerProfileService">
+
+    <types>
+        <xsd:schema>
+            <xsd:import namespace="http://practice.learning.com/osb/parallelInvocation/schema/customer"
+                schemaLocation="CustomerRequest.xsd" />
+            <xsd:import namespace="http://practice.learning.com/osb/parallelInvocation/schema/customer"
+                schemaLocation="AggregatedResponse.xsd" />
+        </xsd:schema>
+    </types>
+
+    <message name="CustomerServiceRequest">
+        <part name="parameters" element="cust:CustomerRequest" />
+    </message>
+    <message name="CustomerServiceResponse">
+        <part name="parameters" element="cust:AggregatedResponse" />
+    </message>
+
+    <portType name="CustomerServicePortType">
+        <operation name="getCustomerDetails">
+            <input message="tns:CustomerServiceRequest" />
+            <output message="tns:CustomerServiceResponse" />
+        </operation>
+    </portType>
+
+    <binding name="CustomerServiceBinding"
+        type="tns:CustomerServicePortType">
+        <soap:binding style="document"
+            transport="http://schemas.xmlsoap.org/soap/http" />
+        <operation name="getCustomerDetails">
+            <soap:operation soapAction="getCustomerDetails" />
+            <input>
+                <soap:body use="literal" />
+            </input>
+            <output>
+                <soap:body use="literal" />
+            </output>
+        </operation>
+    </binding>
+
+    <service name="CustomerService">
+        <port name="CustomerServicePort"
+            binding="tns:CustomerServiceBinding">
+            <soap:address location="http://localhost:8010/CustomerService" />
+        </port>
+    </service>
+
+</definitions>

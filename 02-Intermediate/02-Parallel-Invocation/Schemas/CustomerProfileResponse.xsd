@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://practice.learning.com/osb/parallelInvocation/schema/customer"
+    xmlns:tns="http://practice.learning.com/osb/parallelInvocation/schema/customer"
+    elementFormDefault="qualified">
+
+    <xsd:element name="CustomerProfileResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="CustomerID" type="xsd:string" />
+                <xsd:element name="FullName" type="xsd:string" />
+                <xsd:element name="Email" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

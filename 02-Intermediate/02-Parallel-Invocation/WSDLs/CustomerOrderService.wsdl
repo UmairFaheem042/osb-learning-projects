@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://practice.learning.com/osb/parallelInvocation/wsdl/customerOrder"
+             xmlns:cust="http://practice.learning.com/osb/parallelInvocation/schema/customer"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             targetNamespace="http://practice.learning.com/osb/parallelInvocation/wsdl/customerOrder"
+             name="CustomerOrderService">
+
+    <types>
+        <xsd:schema>
+            <xsd:import namespace="http://practice.learning.com/osb/parallelInvocation/schema/customer"
+                        schemaLocation="CustomerRequest.xsd"/>
+            <xsd:import namespace="http://practice.learning.com/osb/parallelInvocation/schema/customer"
+                        schemaLocation="CustomerOrderResponse.xsd"/>
+        </xsd:schema>
+    </types>
+
+    <message name="CustomerOrderRequest">
+        <part name="parameters" element="cust:CustomerRequest"/>
+    </message>
+    <message name="CustomerOrderResponseMsg">
+        <part name="parameters" element="cust:CustomerOrderResponse"/>
+    </message>
+
+    <portType name="CustomerOrderPortType">
+        <operation name="getCustomerOrder">
+            <input  message="tns:CustomerOrderRequest"/>
+            <output message="tns:CustomerOrderResponseMsg"/>
+        </operation>
+    </portType>
+
+    <binding name="CustomerOrderBinding"
+             type="tns:CustomerOrderPortType">
+        <soap:binding style="document"
+                      transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getCustomerOrder">
+            <soap:operation soapAction="getCustomerOrder"/>
+            <input>  <soap:body use="literal"/> </input>
+            <output> <soap:body use="literal"/> </output>
+        </operation>
+    </binding>
+
+    <service name="CustomerOrderService">
+        <port name="CustomerOrderPort"
+              binding="tns:CustomerOrderBinding">
+            <soap:address location="http://localhost:8012/CustomerOrderService"/>
+        </port>
+    </service>
+
+</definitions>

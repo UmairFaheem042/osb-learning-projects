@@ -92,7 +92,7 @@ Real-world integration patterns.
 | #   | Project                                           | OSB Status | Topics Covered                  |
 | --- | ------------------------------------------------- | ---------- | ------------------------------- |
 | 11  | [Async Order Processing](03-Advanced/11-async/)   | ⏳ Pending | Fire-and-Forget vs Async BPEL   |
-| 12  | [Human Task Workflow](03-Advanced/12-human-task/) | ⏳ N/A     | SOA-only (Human Task Component) |
+| 12  | [Human Task Workflow](03-Advanced/12-human-task/) | ⏳ Pending    | SOA-only (Human Task Component) |
 | 13  | [Database CRUD](03-Advanced/13-database/)         | ⏳ Pending | DB Adapter in OSB vs SOA        |
 | 14  | [File Processing](03-Advanced/14-file/)           | ⏳ Pending | File Adapter, Batch Processing  |
 | 15  | [REST API Integration](03-Advanced/15-rest/)      | ⏳ Pending | REST Adapter, JSON Handling     |

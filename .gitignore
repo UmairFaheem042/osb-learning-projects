@@ -27,4 +27,6 @@ Thumbs.db
 .idea/
 *.iml
 
-.gitignore
+/.gitignore
+
+/JDeveloperReference.md
